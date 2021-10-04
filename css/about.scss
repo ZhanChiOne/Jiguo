@@ -1,0 +1,141 @@
+.main_one {
+    width: 1920px;
+}
+
+.main {
+    margin-top: 50px;
+    overflow: hidden;
+
+    //左侧部分
+    .m_l {
+        float: left;
+        width: 270px;
+        height: 320px;
+        background-color: #f3f3f3;
+
+        h1 {
+            margin-top: 35px;
+            margin-left: 40px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        div {
+            margin: 0 auto;
+            margin-top: 7px;
+            margin-bottom: 15px;
+            width: 230px;
+            height: 1px;
+            background-color: #a3a3a3;
+        }
+
+        dl {
+            dt {
+                margin-bottom: 12px;
+                margin-left: 40px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            dd {
+                margin-left: 50px;
+                margin-bottom: 8px;
+                font-size: 15px;
+
+            }
+        }
+    }
+
+    //右侧部分
+    .m_r {
+        margin-left: 30px;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        float: left;
+        width: 700px;
+        height: 2400px;
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+
+        h1 {
+            margin-top: 35px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        div {
+            margin-top: 8px;
+            margin-bottom: 30px;
+            width: 635px;
+            height: 1px;
+            background-color: #a3a3a3;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+
+        p {
+            margin-bottom: 60px;
+            font-size: 16px;
+            width: 625px;
+            line-height: 25px;
+        }
+
+        .h1_1 {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-left: 26px;
+            height: 30px;
+            font-size: 16px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+    }
+
+    .mf_r {
+        margin-left: 30px;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        float: left;
+        width: 700px;
+        height: 1000px;
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+
+        h1 {
+            margin-top: 35px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        div {
+            margin-top: 8px;
+            margin-bottom: 30px;
+            width: 635px;
+            height: 1px;
+            background-color: #a3a3a3;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+
+        p {
+            margin-bottom: 60px;
+            font-size: 16px;
+            width: 625px;
+            line-height: 25px;
+        }
+    }
+}
