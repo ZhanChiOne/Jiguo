@@ -174,21 +174,144 @@
     }
 }
 
+//动画效果
+@keyframes animtop1 {
+    0% {
+        right: -500px;
+        top: 0;
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        right: 0;
+        top: 0;
+        transform: rotateZ(0deg);
+    }
+}
+
 //主体内容区域
+
 .main_index {
     width: 1920px;
 
+    //头部大图
     .m_index_top {
         position: relative;
 
         .m_inde_top1 {
             position: absolute;
             top: 10%;
-            right: 20%;
+            right: 22.5%;
             width: 350px;
             height: 230px;
-            border: 1px solid;
             z-index: 2;
+            animation: animtop1 3s linear 1;
+
+            h2 {
+                font-size: 32px;
+                color: white;
+
+
+            }
+
+            .m_i_span {
+                margin-top: 20px;
+                height: 60px;
+
+                span {
+                    margin-right: 15px;
+                    padding: 10px 13px;
+                    background-color: rgba(255, 255, 255, .3);
+                    border-radius: 5px;
+                    color: white;
+                }
+
+                span:nth-child(1) {
+                    margin-left: 55px;
+                }
+            }
+
+            .m_i_time {
+                height: 40px;
+                font-size: 18px;
+                color: white;
+            }
+
+            button {
+                margin-left: 55px;
+                width: 255px;
+                height: 50px;
+                font-size: 26px;
+                color: white;
+                border: none;
+                background-color: #fe5341;
+            }
+        }
+    }
+
+    //滚动模块
+    .index_m_gund {
+        overflow: hidden;
+        width: 1920px;
+        height: 380px;
+        background-color: skyblue;
+
+
+        //滚动标题
+        .in_m_g_tit {
+            height: 65px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 65px;
+        }
+
+
+    }
+
+    //滚动内容部分
+    .in_m_gund_cent {
+        margin: 0 auto;
+        width: 1094px;
+        height: 290px;
+
+        //左
+        .in_m_g_left {
+            margin-right: 10px;
+            float: left;
+            height: 290px;
+            width: 37px;
+            background: url(../img/tubiao/prev.png) no-repeat center;
+        }
+
+        //右侧
+        .in_m_g_right {
+            margin-left: 10px;
+            float: left;
+            width: 37px;
+            height: 290px;
+            background: url(../img/tubiao/next.png) no-repeat center;
+        }
+
+        //中部滚动部分
+        .in_m_g_cent {
+            float: left;
+            width: 1000px;
+            height: 320px;
+            overflow: hidden;
+            overflow: auto;
+
+            .in_m_g_ul {
+                width: 3500px;
+
+                li {
+                    margin-right: 35px;
+                    float: left;
+                    width: 220px;
+                    height: 290px;
+                    background-color: red;
+                    border-radius: 10px;
+                }
+            }
         }
     }
 }

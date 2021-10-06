@@ -165,6 +165,19 @@
   color: #818382;
 }
 
+@keyframes animtop1 {
+  0% {
+    right: -500px;
+    top: 0;
+    transform: rotateZ(360deg);
+  }
+  100% {
+    right: 0;
+    top: 0;
+    transform: rotateZ(0deg);
+  }
+}
+
 .main_index {
   width: 1920px;
 }
@@ -176,9 +189,104 @@
 .main_index .m_index_top .m_inde_top1 {
   position: absolute;
   top: 10%;
-  right: 20%;
+  right: 22.5%;
   width: 350px;
   height: 230px;
-  border: 1px solid;
   z-index: 2;
+  animation: animtop1 3s linear 1;
+}
+
+.main_index .m_index_top .m_inde_top1 h2 {
+  font-size: 32px;
+  color: white;
+}
+
+.main_index .m_index_top .m_inde_top1 .m_i_span {
+  margin-top: 20px;
+  height: 60px;
+}
+
+.main_index .m_index_top .m_inde_top1 .m_i_span span {
+  margin-right: 15px;
+  padding: 10px 13px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: white;
+}
+
+.main_index .m_index_top .m_inde_top1 .m_i_span span:nth-child(1) {
+  margin-left: 55px;
+}
+
+.main_index .m_index_top .m_inde_top1 .m_i_time {
+  height: 40px;
+  font-size: 18px;
+  color: white;
+}
+
+.main_index .m_index_top .m_inde_top1 button {
+  margin-left: 55px;
+  width: 255px;
+  height: 50px;
+  font-size: 26px;
+  color: white;
+  border: none;
+  background-color: #fe5341;
+}
+
+.main_index .index_m_gund {
+  overflow: hidden;
+  width: 1920px;
+  height: 380px;
+  background-color: skyblue;
+}
+
+.main_index .index_m_gund .in_m_g_tit {
+  height: 65px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.main_index .in_m_gund_cent {
+  margin: 0 auto;
+  width: 1094px;
+  height: 290px;
+}
+
+.main_index .in_m_gund_cent .in_m_g_left {
+  margin-right: 10px;
+  float: left;
+  height: 290px;
+  width: 37px;
+  background: url(../img/tubiao/prev.png) no-repeat center;
+}
+
+.main_index .in_m_gund_cent .in_m_g_right {
+  margin-left: 10px;
+  float: left;
+  width: 37px;
+  height: 290px;
+  background: url(../img/tubiao/next.png) no-repeat center;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent {
+  float: left;
+  width: 1000px;
+  height: 320px;
+  overflow: hidden;
+  overflow: auto;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul {
+  width: 3500px;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li {
+  margin-right: 35px;
+  float: left;
+  width: 220px;
+  height: 290px;
+  background-color: red;
+  border-radius: 10px;
 }
