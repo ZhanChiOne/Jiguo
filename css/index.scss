@@ -41,6 +41,10 @@
                 text-decoration: none;
             }
 
+            a:hover {
+                color: red;
+            }
+
         }
     }
 
@@ -177,15 +181,13 @@
 //动画效果
 @keyframes animtop1 {
     0% {
-        right: -500px;
-        top: 0;
         transform: rotateZ(360deg);
+        transform: scale(0, 0);
     }
 
     100% {
-        right: 0;
-        top: 0;
         transform: rotateZ(0deg);
+        transform: scale(1, 1);
     }
 }
 
@@ -254,7 +256,6 @@
         overflow: hidden;
         width: 1920px;
         height: 380px;
-        background-color: skyblue;
 
 
         //滚动标题
@@ -281,6 +282,7 @@
             height: 290px;
             width: 37px;
             background: url(../img/tubiao/prev.png) no-repeat center;
+            cursor: pointer;
         }
 
         //右侧
@@ -290,7 +292,14 @@
             width: 37px;
             height: 290px;
             background: url(../img/tubiao/next.png) no-repeat center;
+            cursor: pointer;
         }
+
+        .in_m_g_left:hover,
+        .in_m_g_right:hover {
+            background-color: skyblue;
+        }
+
 
         //中部滚动部分
         .in_m_g_cent {
@@ -298,20 +307,407 @@
             width: 1000px;
             height: 320px;
             overflow: hidden;
-            overflow: auto;
 
+            //轮播部分
             .in_m_g_ul {
                 width: 3500px;
+
 
                 li {
                     margin-right: 35px;
                     float: left;
                     width: 220px;
                     height: 290px;
-                    background-color: red;
                     border-radius: 10px;
+                    overflow: hidden;
+
+                    img {
+                        width: 220px;
+                        height: 130px;
+                    }
+
+                    h2 {
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    .in_lunb {
+                        height: 35px;
+
+                        .in_lunb_s1 {
+                            margin-left: 50px;
+                            float: left;
+                            margin-top: 5px;
+                            padding: 3px 10px;
+                            border: 1px solid #f8563d;
+                            border-radius: 5px;
+                            color: #f8563d;
+                        }
+
+                        .in_lunb_s2 {
+                            margin-left: 10px;
+                            float: left;
+                            margin-top: 5px;
+                            padding: 3px 10px;
+                            border: 1px solid #f8563d;
+                            border-radius: 5px;
+                            color: #f8563d;
+                        }
+                    }
+
+                    .lunb_shenq {
+                        height: 35px;
+                        text-align: center;
+                        line-height: 35px;
+
+                        strong {
+                            color: #f8563d;
+                        }
+                    }
+
+                    .lunb_foot {
+                        height: 20px;
+                        color: #f8563d;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+
                 }
             }
         }
+    }
+
+    // 报告精选部分
+    .ind_baogao {
+        width: 1920px;
+        height: 570px;
+        background-color: #f7f7f7;
+        transition: all 2s;
+        overflow: hidden;
+    }
+
+    .ind_baog_tit {
+        margin-top: 25px;
+        float: left;
+        width: 100%;
+        font-weight: 700;
+
+        height: 25px;
+
+        span:nth-child(1) {
+            font-size: 20px;
+        }
+
+        span:nth-child(2) {
+            float: right;
+            font-size: 12px;
+            color: #fe5035;
+            cursor: pointer;
+
+            i {
+                margin-left: 10px;
+                display: inline-block;
+                width: 12px;
+                height: 10px;
+                background: url(../img/tubiao/readMore.png) no-repeat center center;
+            }
+        }
+
+    }
+
+    .ind_baog_ul {
+        height: 800px;
+
+        li {
+            margin-top: 20px;
+            margin-right: 20px;
+            float: left;
+            width: 220px;
+            height: 230px;
+            border-radius: 10px;
+
+            img {
+                width: 220px;
+                height: 150px;
+                border-radius: 10px 10px 0 0;
+            }
+
+            h3 {
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            .ind_baog_foot {
+                margin-top: 20px;
+                height: 20px;
+                overflow: hidden;
+
+                span {
+                    float: left;
+                    font-size: 12px;
+                }
+
+                span:nth-child(1) {
+                    margin-left: 20px;
+                }
+
+                span:nth-child(2) {
+                    margin-right: 10px;
+                    float: right;
+
+                    i {
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-right: 3px;
+                        width: 12px;
+                        height: 12px;
+                        vertical-align: baseline;
+
+                    }
+
+                    i:nth-child(1) {
+                        background: url(../img/tubiao/zan.png) no-repeat center center;
+                    }
+
+                    i:nth-child(2) {
+                        background: url(../img/tubiao/xin.png) no-repeat center center;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //导购精选部分
+    .ind_daogou {
+        width: 1920px;
+        height: 305px;
+        overflow: hidden;
+        transition: all 2s;
+
+        .ind_daogou_tit {
+            margin-top: 20px;
+
+            margin-top: 25px;
+            float: left;
+            width: 100%;
+            font-weight: 700;
+
+            height: 25px;
+
+            span:nth-child(1) {
+                font-size: 20px;
+            }
+
+            span:nth-child(2) {
+                float: right;
+                font-size: 12px;
+                color: #fe5035;
+                cursor: pointer;
+
+                i {
+                    margin-left: 10px;
+                    display: inline-block;
+                    width: 12px;
+                    height: 10px;
+                    background: url(../img/tubiao/readMore.png) no-repeat center center;
+                }
+            }
+
+
+        }
+
+        .ind_daogou_ul {
+            height: 400px;
+            float: left;
+
+            li {
+                margin-top: 20px;
+                margin-right: 20px;
+                float: left;
+                width: 220px;
+                height: 230px;
+                border-radius: 10px;
+
+                img {
+                    width: 220px;
+                    height: 150px;
+                    border-radius: 10px 10px 0 0;
+                }
+
+                h3 {
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    font-size: 12px;
+                }
+
+                .ind_baog_foot {
+                    margin-top: 20px;
+                    height: 20px;
+                    overflow: hidden;
+
+                    span {
+                        float: left;
+                        font-size: 12px;
+                    }
+
+                    span:nth-child(1) {
+                        margin-left: 20px;
+                    }
+
+                    span:nth-child(2) {
+                        margin-right: 10px;
+                        float: right;
+
+                        i {
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-right: 3px;
+                            width: 12px;
+                            height: 12px;
+                            vertical-align: baseline;
+
+                        }
+
+                        i:nth-child(1) {
+                            background: url(../img/tubiao/zan.png) no-repeat center center;
+                        }
+
+                        i:nth-child(2) {
+                            background: url(../img/tubiao/xin.png) no-repeat center center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    //发现酷玩模块
+    .ind_play {
+        width: 1920px;
+        height: 1100px;
+        background-color: #f7f7f7;
+
+        //标题
+        .ind_play_tit {
+            margin-top: 20px;
+
+            margin-top: 25px;
+            float: left;
+            width: 100%;
+            font-weight: 700;
+
+            height: 25px;
+
+            span:nth-child(1) {
+                font-size: 20px;
+            }
+
+            span:nth-child(2) {
+                float: right;
+                font-size: 12px;
+                color: #fe5035;
+                cursor: pointer;
+
+                i {
+                    margin-left: 10px;
+                    display: inline-block;
+                    width: 12px;
+                    height: 10px;
+                    background: url(../img/tubiao/readMore.png) no-repeat center center;
+                }
+            }
+
+
+        }
+
+        //ul部分
+        .ind_play_ul {
+            margin-bottom: 30px;
+            float: left;
+            width: 100%;
+            height: 230px;
+
+            li {
+                margin-top: 10px;
+                margin-right: 25px;
+                float: left;
+                width: 220px;
+                height: 100%;
+                border-radius: 10px;
+
+                img {
+                    width: 220px;
+                    height: 130px;
+                    border-radius: 10px 10px 0 0;
+                }
+
+                h3 {
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    color: #000;
+                }
+
+                p {
+                    margin-top: 5px;
+                    margin-left: 10px;
+                    font-size: 12px;
+                    color: #ccc;
+                }
+
+                div {
+                    margin-top: 15px;
+
+                    span {
+                        height: 15px;
+                    }
+
+                    span:nth-child(1) {
+                        float: left;
+                        margin-left: 20px;
+                        color: #f8563d;
+                        font-weight: 700;
+                    }
+
+                    span:nth-child(2) {
+                        margin-right: 10px;
+                        float: right;
+
+                        i {
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-right: 3px;
+                            width: 12px;
+                            height: 12px;
+                            vertical-align: baseline;
+
+                        }
+
+                        i:nth-child(1) {
+                            background: url(../img/tubiao/zan.png) no-repeat center center;
+                        }
+
+                        i:nth-child(2) {
+                            background: url(../img/tubiao/xin.png) no-repeat center center;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    //加载
+    .ind_jiaz {
+        height: 125px;
+        background-color: #f7f7f7;
+        line-height: 100px;
+        text-align: center;
+        font-size: 16px;
+        color: #f8563d;
+        cursor: pointer;
     }
 }

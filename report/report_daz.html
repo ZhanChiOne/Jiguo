@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/regist.css">
-    <script src="./js/regist.js"></script>
-    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/report.css">
+    <script src="../js/report.js"></script>
+    
+    <title>试用全部</title>
 </head>
 <body>
 <!--头部 -->
 <header>
     <div class="top">
         <div class="top_one  w">
-            <span><img src="./img/logonew.png" alt=""></span>
+            <span><img src="../img/logonew.png" alt="" width="1920px"></span>
             <ul>
-                <li><a href="./index.html">首页</a></li>
-                <li><a href="./play/play_new.html">酷玩</a></li>
-                <li><a href="./guid/detail_page.html">导购</a></li>
-                <li><a href="./report/report_.html">试用</a></li>
-                <li><a href="./use/use_new.html">报告</a></li>
+                <li><a href="../index.html" >首页</a></li>
+                <li><a href="../play/play_new.html">酷玩</a></li>
+                <li><a href="../guid/detail_page.html">导购</a></li>
+                <li><a href="../report/report_.html" class="a_color">试用</a></li>
+                <li><a href="../use/use_new.html">报告</a></li>
             </ul>
             <div class="top_search">
                 <input type="text">
@@ -32,35 +33,44 @@
     </div>
 </header>
 <!-- 主体 -->
-<div class="reg_main">
+    <!--试用标题 -->
+    <div class="report_title">
+        <div class="w">
+            <div class="report_tit_h1">
+                免费试用
+            </div>
+            <div class="report_yiji_a">
+                <span><a href="./report_.html">大众试用</a></span>
+                <span><a href="./report_daz.html" class="a_color">体验师专享</a></span>
+            </div>
+            <div class="report_duoshu_a">
+                <a href="">全部</a>
+                <a href="">申请</a>
+                <a href="">试用</a>
+                <a href="">结束</a>
+            </div>
+        </div>
+    </div> 
+    <!-- ul部分 -->
+<div class="report_main">
     <div class="w">
-        <div class="reg_zuche">
-            <div class="reg_zuche_tit">
-                <span id="reg_zuche_tit_s1">注册</span>
-                <span id="reg_zuche_tit_s2">登录</span>
+        <ul id="report_ul">
+            <li>
+            <div class="report_fud"></div>
+            <img src="../img/bg1.jpg">
+            <h2>123456</h2>
+            <div class="report_li_d1">
+                <span>12</span>
+                <span>123</span>
             </div>
-            <div class="xians">
-                <!-- 注册部分 -->
-                <div class="reg_zhuc_div">
-                    <form action="#" >
-                        <div class="inp_pone"><input type="text" placeholder="请输入手机号" id="pone"><br><div id="pone_div"></div></div>
-                        <div class="inp_img"><input type="text" placeholder="请输图片验证码" id="inp_img"><i></i><br><div id="inp_img_div"></div></div>
-                        <div class="inp_num"><input type="text" placeholder="请输入数字验证码"id="inp_num" ><span id="inp_num_s1">获取验证码</span><br><div id="inp_num_div"></div></div>
-                        <div class=inp_name"><input type="text" placeholder="请输入用户名" id="inp_name"><br><div id="inp_name_div"></div></div>
-                        <div class="inp_pwd"><input type="password" placeholder="请输入密码" id="inp_pwd"><br><div id="inp_pwd_div"></div></div>
-                        <div class="inp_pwd1"><input type="password" placeholder="请确认密码" id="inp_pwd1"><br><div id="inp_pwd1_div"></div></div>
-                        <button id="zhuc_btn">提交</button>
-                    </form>
-                </div>
-                <div class="reg_dengl_div">
-                    <form action="#" >
-                        <div class="inp_email"><input type="text" placeholder="请输入手机号"><br><div id="dl_pone_div"></div></div>    
-                        <div class=inp_name"><input type="text" placeholder="请输入用户名"><br><div id="dl_name_div"></div></div>
-                        <div class="inp_pwd"><input type="password" placeholder="请输入密码"><br><div id="dl_pwd_div"></div></div>
-                        <button id="zhuc_btn1">提交</button>
-                    </form>
-                </div>
+            <div class="report_li_shen"> 
+                <strong>123</strong>申请
             </div>
+            <div class="report_foot">剩余天数</div>
+            </li >
+        </ul>
+        <div class="repost_ul_foot">
+            <span><i></i>加载更多</span>
         </div>
     </div>
 </div>
@@ -73,7 +83,7 @@
                 <span class="foot_img_1"></span>
                 <!-- 底部logon -->
                 <span>
-                    <img src="./img/logoImg.jpg" alt="">
+                    <img src="../img/logoImg.jpg" alt="">
                     <p>全球酷玩试用导购平台</p>
                     <p>酷·新奇·好玩·品质</p>
                     <p>微信添加 "JguoJguo"</p>
@@ -84,8 +94,8 @@
             <div class="foot_dl">
                     <dl>
                     <dt>免费试用</dt>
-                    <dd><a href="./help.html">试用流程</a></dd>
-                    <dd><a href="./help.html">如何提高成功率</a></dd>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
                     </dl>
                     <dl class="dl_2">
                     <dt>友情连接</dt>

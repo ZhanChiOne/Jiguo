@@ -4,110 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <script src="./js/jquery-3.5.1.js"></script>
-    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/play.css">
+    <script src="../js/play.js"></script>
+    <script src="../js/jquery-3.5.1.js"></script>
     
-    <title>网站首页</title>
+    <title>酷玩模块——最热</title>
 </head>
 <body>
 <!--头部 -->
 <header>
     <div class="top">
         <div class="top_one  w">
-            <span><img src="./img/logonew.png" alt=""></span>
+            <span><img src="../img/logonew.png" alt=""></span>
             <ul>
-                <li><a href="./index.html">首页</a></li>
-                <li><a href="./play/play_new.html">酷玩</a></li>
-                <li><a href="./guid/detail_page.html">导购</a></li>
-                <li><a href="./report/report_.html">试用</a></li>
-                <li><a href="./use/use_new.html">报告</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="./play_new.html"class="a_color">酷玩</a></li>
+                <li><a href="../guid/detail_page.html">导购</a></li>
+                <li><a href="../report/report_.html">试用</a></li>
+                <li><a href="../use/use_new.html">报告</a></li>
             </ul>
             <div class="top_search">
                 <input type="text">
                 <i></i>
             </div>
-            <button><a href="./regist.html">注册</a> </button>
+            <button>注册</button>
         </div>
     </div>
 </header>
 <!-- 内容区域 -->
-<main>  
-    <div class="main_index">
-        <!-- 头部图片部分 -->
-        <div class="m_index_top">
-            <img src="./img/tubiao/original.jpg" alt="">
-            <span class="m_inde_top1">
-                <h2>幻响小贝HIFI2.1音箱</h2>
-                <div class="m_i_span">
-                    <span>126人申请</span>
-                    <span>￥599</span>
-                    <span>20台</span>
-                </div>
-                <div class="m_i_time">申请时间剩余：</div>
-                <button>立即申请</button>
-            </span>
+<main>
+    <div class="play_main">
+        <div class="w">
+            <!-- 头部标题 -->
+            <div class="play_main_title">发现酷玩</div>
+            <!-- 链接部分 -->
+            <div class="play_m_a">
+                <a href="./play_new.html">最新</a>
+                <a href="./play_hot.html"class="a_color">最热</a>
+                <a href="./play_category.html" >品类</a>
+            </div>    
         </div>
-
-        <!-- 滚动模块 -->
-        <div class="index_m_gund">
-            <div class="in_m_g_tit w">热门试用</div>
-        <div class="in_m_gund_cent">
-            <span class="in_m_g_left"></span>
-            <div class="in_m_g_cent">
-                <ul class="in_m_g_ul" id="list">
-                </ul>
-            </div>
-            <span class="in_m_g_right"></span>
-        </div>
-        </div>
-        <!-- 报告精选 -->
-        <div class="ind_baogao">
+        <!--主体模块部分 -->
+        <div class="play_hot_main">
             <div class="w">
-                <div class="ind_baog_tit">
-                    <span>报告精选</span><span id="ind_b_s2">查看更多<i></i></span> 
-                </div>
-                <ul class="ind_baog_ul" id="ind_bao_ul">
-                    <li>
-                        <img src="./img/bg1.jpg" alt="">
-                        <h3>空气净化器里学问啊手动阀打发士大夫啊手动阀手动阀</h3>
-                        <div class="ind_baog_foot">
-                            <span>叔叔</span>
-                            <span><i></i>3 <i></i>3</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- 导购精选 -->
-        <div class="ind_daogou">
+                 <!-- 发现酷玩模块 -->
+        <div class="play_hot">
             <div class="w">
-                <div class="ind_daogou_tit">
-                    <span>导购精选</span><span id="ind_daogou_s2">查看更多<i></i></span>
-                </div>
-                <div class="ind_daogou_ul" id="ind_daogou_ul">
-                    <li>
-                        <img src="./img/bg1.jpg" alt="">
-                        <h3>空气净化器里学问啊手动阀打发士大夫啊手动阀手动阀</h3>
-                        <div class="ind_baog_foot">
-                            <span><i></i>3 <i></i>3</span>
-                        </div>
-                    </li>
-                </div>
-            </div>
-        </div>
-        <!-- 发现酷玩模块 -->
-        <div class="ind_play">
-            <div class="w">
-                <div class="ind_play_tit">
+                <div class="play_hot_tit">
                     <span>发现酷玩</span>
-                    <span id="ind_b_s2">查看更多<i></i></span>
+                    <span id="play_hot_t_s2">查看更多<i></i></span>
                 </div>
                 <!-- ul1 -->
-                <div class="ind_play_ul" id="ind_play_ul">
+                <div class="play_hot_ul" id="play_hot_ul">
                     <li>
-                        <img src="./img/k1.jpg" alt="">
+                        <img src="../img/k1.jpg" alt="">
                         <h3>啊手动阀手动阀</h3>
                         <p>阿斯顿发射点</p>
                         <div>
@@ -116,9 +68,9 @@
                         </div>
                     </li>
                 </div>
-                <div class="ind_play_ul" id="ind_play_ul1">
+                <div class="play_hot_ul" id="play_hot_ul1">
                     <li>
-                        <img src="./img/k1.jpg" alt="">
+                        <img src="../img/k1.jpg" alt="">
                         <h3>啊手动阀手动阀</h3>
                         <p>阿斯顿发射点</p>
                         <div>
@@ -127,9 +79,9 @@
                         </div>
                     </li>
                 </div>
-                <div class="ind_play_ul" id="ind_play_ul2">
+                <div class="play_hot_ul" id="play_hot_ul2">
                     <li>
-                        <img src="./img/k1.jpg" alt="">
+                        <img src="../img/k1.jpg" alt="">
                         <h3>啊手动阀手动阀</h3>
                         <p>阿斯顿发射点</p>
                         <div>
@@ -138,9 +90,9 @@
                         </div>
                     </li>
                 </div>
-                <div class="ind_play_ul" id="ind_play_ul3">
+                <div class="play_hot_ul" id="play_hot_ul3">
                     <li>
-                        <img src="./img/k1.jpg" alt="">
+                        <img src="../img/k1.jpg" alt="">
                         <h3>啊手动阀手动阀</h3>
                         <p>阿斯顿发射点</p>
                         <div>
@@ -152,8 +104,10 @@
             </div>
         </div>
         <!-- 加载 -->
-        <div class="ind_jiaz">加载更多</div>
-    </div>
+        <div class="play_hot_jiaz">
+            <div class="w">加载更多</div>
+        </div>
+    </div>  
 </main>
 <!-- 底部 -->
 <footer>
@@ -175,8 +129,8 @@
             <div class="foot_dl">
                     <dl>
                     <dt>免费试用</dt>
-                    <dd><a href="./help.html">试用流程</a></dd>
-                    <dd><a href="./help.html">如何提高成功率</a></dd>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
                     </dl>
                     <dl class="dl_2">
                     <dt>友情连接</dt>
@@ -210,10 +164,10 @@
                     </dl>
                     <dl>
                     <dt>厂商合作</dt>
-                    <dd><a href="./index.html">关于极果</a></dd>
-                    <dd><a href="./about.html">联系我们</a></dd>
-                    <dd><a href="#">商务合作：BD@jiguo.com</a></dd>
-                    <dd><a href="#">CEO邮箱：CEO@jiguo.com</a></dd>
+                    <dd><a href="">关于极果</a></dd>
+                    <dd><a href="">联系我们</a></dd>
+                    <dd><a href="">商务合作：BD@jiguo.com</a></dd>
+                    <dd><a href="">CEO邮箱：CEO@jiguo.com</a></dd>
                     </dl>
             </div>
             <div class="foot_botton">

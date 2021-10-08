@@ -42,6 +42,10 @@
   text-decoration: none;
 }
 
+.top_one ul li a:hover {
+  color: red;
+}
+
 .top_one .a_color {
   color: red;
 }
@@ -167,14 +171,12 @@
 
 @keyframes animtop1 {
   0% {
-    right: -500px;
-    top: 0;
     transform: rotateZ(360deg);
+    transform: scale(0, 0);
   }
   100% {
-    right: 0;
-    top: 0;
     transform: rotateZ(0deg);
+    transform: scale(1, 1);
   }
 }
 
@@ -238,7 +240,6 @@
   overflow: hidden;
   width: 1920px;
   height: 380px;
-  background-color: skyblue;
 }
 
 .main_index .index_m_gund .in_m_g_tit {
@@ -260,6 +261,7 @@
   height: 290px;
   width: 37px;
   background: url(../img/tubiao/prev.png) no-repeat center;
+  cursor: pointer;
 }
 
 .main_index .in_m_gund_cent .in_m_g_right {
@@ -268,6 +270,12 @@
   width: 37px;
   height: 290px;
   background: url(../img/tubiao/next.png) no-repeat center;
+  cursor: pointer;
+}
+
+.main_index .in_m_gund_cent .in_m_g_left:hover,
+.main_index .in_m_gund_cent .in_m_g_right:hover {
+  background-color: skyblue;
 }
 
 .main_index .in_m_gund_cent .in_m_g_cent {
@@ -275,7 +283,6 @@
   width: 1000px;
   height: 320px;
   overflow: hidden;
-  overflow: auto;
 }
 
 .main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul {
@@ -287,6 +294,369 @@
   float: left;
   width: 220px;
   height: 290px;
-  background-color: red;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li img {
+  width: 220px;
+  height: 130px;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li .in_lunb {
+  height: 35px;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li .in_lunb .in_lunb_s1 {
+  margin-left: 50px;
+  float: left;
+  margin-top: 5px;
+  padding: 3px 10px;
+  border: 1px solid #f8563d;
+  border-radius: 5px;
+  color: #f8563d;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li .in_lunb .in_lunb_s2 {
+  margin-left: 10px;
+  float: left;
+  margin-top: 5px;
+  padding: 3px 10px;
+  border: 1px solid #f8563d;
+  border-radius: 5px;
+  color: #f8563d;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li .lunb_shenq {
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li .lunb_shenq strong {
+  color: #f8563d;
+}
+
+.main_index .in_m_gund_cent .in_m_g_cent .in_m_g_ul li .lunb_foot {
+  height: 20px;
+  color: #f8563d;
+  line-height: 20px;
+  text-align: center;
+}
+
+.main_index .ind_baogao {
+  width: 1920px;
+  height: 570px;
+  background-color: #f7f7f7;
+  transition: all 2s;
+  overflow: hidden;
+}
+
+.main_index .ind_baog_tit {
+  margin-top: 25px;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  height: 25px;
+}
+
+.main_index .ind_baog_tit span:nth-child(1) {
+  font-size: 20px;
+}
+
+.main_index .ind_baog_tit span:nth-child(2) {
+  float: right;
+  font-size: 12px;
+  color: #fe5035;
+  cursor: pointer;
+}
+
+.main_index .ind_baog_tit span:nth-child(2) i {
+  margin-left: 10px;
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+  background: url(../img/tubiao/readMore.png) no-repeat center center;
+}
+
+.main_index .ind_baog_ul {
+  height: 800px;
+}
+
+.main_index .ind_baog_ul li {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+  width: 220px;
+  height: 230px;
+  border-radius: 10px;
+}
+
+.main_index .ind_baog_ul li img {
+  width: 220px;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.main_index .ind_baog_ul li h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.main_index .ind_baog_ul li .ind_baog_foot {
+  margin-top: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.main_index .ind_baog_ul li .ind_baog_foot span {
+  float: left;
+  font-size: 12px;
+}
+
+.main_index .ind_baog_ul li .ind_baog_foot span:nth-child(1) {
+  margin-left: 20px;
+}
+
+.main_index .ind_baog_ul li .ind_baog_foot span:nth-child(2) {
+  margin-right: 10px;
+  float: right;
+}
+
+.main_index .ind_baog_ul li .ind_baog_foot span:nth-child(2) i {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+  vertical-align: baseline;
+}
+
+.main_index .ind_baog_ul li .ind_baog_foot span:nth-child(2) i:nth-child(1) {
+  background: url(../img/tubiao/zan.png) no-repeat center center;
+}
+
+.main_index .ind_baog_ul li .ind_baog_foot span:nth-child(2) i:nth-child(2) {
+  background: url(../img/tubiao/xin.png) no-repeat center center;
+}
+
+.main_index .ind_daogou {
+  width: 1920px;
+  height: 305px;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.main_index .ind_daogou .ind_daogou_tit {
+  margin-top: 20px;
+  margin-top: 25px;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  height: 25px;
+}
+
+.main_index .ind_daogou .ind_daogou_tit span:nth-child(1) {
+  font-size: 20px;
+}
+
+.main_index .ind_daogou .ind_daogou_tit span:nth-child(2) {
+  float: right;
+  font-size: 12px;
+  color: #fe5035;
+  cursor: pointer;
+}
+
+.main_index .ind_daogou .ind_daogou_tit span:nth-child(2) i {
+  margin-left: 10px;
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+  background: url(../img/tubiao/readMore.png) no-repeat center center;
+}
+
+.main_index .ind_daogou .ind_daogou_ul {
+  height: 400px;
+  float: left;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+  width: 220px;
+  height: 230px;
+  border-radius: 10px;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li img {
+  width: 220px;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li .ind_baog_foot {
+  margin-top: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li .ind_baog_foot span {
+  float: left;
+  font-size: 12px;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li .ind_baog_foot span:nth-child(1) {
+  margin-left: 20px;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li .ind_baog_foot span:nth-child(2) {
+  margin-right: 10px;
+  float: right;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li .ind_baog_foot span:nth-child(2) i {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+  vertical-align: baseline;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li .ind_baog_foot span:nth-child(2) i:nth-child(1) {
+  background: url(../img/tubiao/zan.png) no-repeat center center;
+}
+
+.main_index .ind_daogou .ind_daogou_ul li .ind_baog_foot span:nth-child(2) i:nth-child(2) {
+  background: url(../img/tubiao/xin.png) no-repeat center center;
+}
+
+.main_index .ind_play {
+  width: 1920px;
+  height: 1100px;
+  background-color: #f7f7f7;
+}
+
+.main_index .ind_play .ind_play_tit {
+  margin-top: 20px;
+  margin-top: 25px;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  height: 25px;
+}
+
+.main_index .ind_play .ind_play_tit span:nth-child(1) {
+  font-size: 20px;
+}
+
+.main_index .ind_play .ind_play_tit span:nth-child(2) {
+  float: right;
+  font-size: 12px;
+  color: #fe5035;
+  cursor: pointer;
+}
+
+.main_index .ind_play .ind_play_tit span:nth-child(2) i {
+  margin-left: 10px;
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+  background: url(../img/tubiao/readMore.png) no-repeat center center;
+}
+
+.main_index .ind_play .ind_play_ul {
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+  height: 230px;
+}
+
+.main_index .ind_play .ind_play_ul li {
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+  width: 220px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.main_index .ind_play .ind_play_ul li img {
+  width: 220px;
+  height: 130px;
+  border-radius: 10px 10px 0 0;
+}
+
+.main_index .ind_play .ind_play_ul li h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.main_index .ind_play .ind_play_ul li p {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.main_index .ind_play .ind_play_ul li div {
+  margin-top: 15px;
+}
+
+.main_index .ind_play .ind_play_ul li div span {
+  height: 15px;
+}
+
+.main_index .ind_play .ind_play_ul li div span:nth-child(1) {
+  float: left;
+  margin-left: 20px;
+  color: #f8563d;
+  font-weight: 700;
+}
+
+.main_index .ind_play .ind_play_ul li div span:nth-child(2) {
+  margin-right: 10px;
+  float: right;
+}
+
+.main_index .ind_play .ind_play_ul li div span:nth-child(2) i {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+  vertical-align: baseline;
+}
+
+.main_index .ind_play .ind_play_ul li div span:nth-child(2) i:nth-child(1) {
+  background: url(../img/tubiao/zan.png) no-repeat center center;
+}
+
+.main_index .ind_play .ind_play_ul li div span:nth-child(2) i:nth-child(2) {
+  background: url(../img/tubiao/xin.png) no-repeat center center;
+}
+
+.main_index .ind_jiaz {
+  height: 125px;
+  background-color: #f7f7f7;
+  line-height: 100px;
+  text-align: center;
+  font-size: 16px;
+  color: #f8563d;
+  cursor: pointer;
 }

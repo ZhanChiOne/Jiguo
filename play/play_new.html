@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/regist.css">
-    <script src="./js/regist.js"></script>
-    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/play.css">
+    <script src="../js/play.js"></script>
+    <script src="../js/jquery-3.5.1.js"></script>
+    
+    <title>酷玩模块——最新</title>
 </head>
 <body>
 <!--头部 -->
 <header>
     <div class="top">
         <div class="top_one  w">
-            <span><img src="./img/logonew.png" alt=""></span>
+            <span><img src="../img/logonew.png" alt=""></span>
             <ul>
-                <li><a href="./index.html">首页</a></li>
-                <li><a href="./play/play_new.html">酷玩</a></li>
-                <li><a href="./guid/detail_page.html">导购</a></li>
-                <li><a href="./report/report_.html">试用</a></li>
-                <li><a href="./use/use_new.html">报告</a></li>
+                <li><a href="../index.html" >首页</a></li>
+                <li><a href="../play/play_new.html">酷玩</a></li>
+                <li><a href="../guid/detail_page.html">导购</a></li>
+                <li><a href="../use/use_new.html class="a_color">试用</a></li>
+                <li><a href="../report/report_.html">报告</a></li>
             </ul>
             <div class="top_search">
                 <input type="text">
@@ -31,39 +33,71 @@
         </div>
     </div>
 </header>
-<!-- 主体 -->
-<div class="reg_main">
-    <div class="w">
-        <div class="reg_zuche">
-            <div class="reg_zuche_tit">
-                <span id="reg_zuche_tit_s1">注册</span>
-                <span id="reg_zuche_tit_s2">登录</span>
-            </div>
-            <div class="xians">
-                <!-- 注册部分 -->
-                <div class="reg_zhuc_div">
-                    <form action="#" >
-                        <div class="inp_pone"><input type="text" placeholder="请输入手机号" id="pone"><br><div id="pone_div"></div></div>
-                        <div class="inp_img"><input type="text" placeholder="请输图片验证码" id="inp_img"><i></i><br><div id="inp_img_div"></div></div>
-                        <div class="inp_num"><input type="text" placeholder="请输入数字验证码"id="inp_num" ><span id="inp_num_s1">获取验证码</span><br><div id="inp_num_div"></div></div>
-                        <div class=inp_name"><input type="text" placeholder="请输入用户名" id="inp_name"><br><div id="inp_name_div"></div></div>
-                        <div class="inp_pwd"><input type="password" placeholder="请输入密码" id="inp_pwd"><br><div id="inp_pwd_div"></div></div>
-                        <div class="inp_pwd1"><input type="password" placeholder="请确认密码" id="inp_pwd1"><br><div id="inp_pwd1_div"></div></div>
-                        <button id="zhuc_btn">提交</button>
-                    </form>
+<!-- 内容区域 -->
+<main>
+    <div class="play_main">
+        <div class="w">
+            <!-- 头部标题 -->
+            <div class="play_main_title">发现酷玩</div>
+            <!-- 链接部分 -->
+            <div class="play_m_a">
+                <a href="./play_new.html"class="a_color">最新</a>
+                <a href="./play_hot.html">最热</a>
+                <a href="./play_category.html" >品类</a>
+            </div>    
+        </div>
+        <!--主体模块部分 -->
+        <div class="play_new_main">
+            <div class="w">
+                 <!-- 发现酷玩模块 -->
+        <div class="play_hot">
+            <div class="w">
+                <div class="play_hot_tit">
+                    <span>发现酷玩</span>
+                    <span id="play_hot_t_s2">查看更多<i></i></span>
                 </div>
-                <div class="reg_dengl_div">
-                    <form action="#" >
-                        <div class="inp_email"><input type="text" placeholder="请输入手机号"><br><div id="dl_pone_div"></div></div>    
-                        <div class=inp_name"><input type="text" placeholder="请输入用户名"><br><div id="dl_name_div"></div></div>
-                        <div class="inp_pwd"><input type="password" placeholder="请输入密码"><br><div id="dl_pwd_div"></div></div>
-                        <button id="zhuc_btn1">提交</button>
-                    </form>
+                <!-- ul1 -->
+                <div class="play_hot_ul" id="play_hot_ul">
+                    <li>
+                        <img src="../img/k1.jpg" alt="">
+                        <h3>啊手动阀手动阀</h3>
+                        <p>阿斯顿发射点</p>
+                        <div>
+                            <span>￥599</span>
+                            <span><i></i>3<i></i>5</span>
+                        </div>
+                    </li>
+                </div>
+                <div class="play_hot_ul" id="play_hot_ul1">
+                    <li>
+                        <img src="../img/k1.jpg" alt="">
+                        <h3>啊手动阀手动阀</h3>
+                        <p>阿斯顿发射点</p>
+                        <div>
+                            <span>￥599</span>
+                            <span><i></i>3<i></i>5</span>
+                        </div>
+                    </li>
+                </div>
+                <div class="play_hot_ul" id="play_hot_ul2">
+                    <li>
+                        <img src="../img/k1.jpg" alt="">
+                        <h3>啊手动阀手动阀</h3>
+                        <p>阿斯顿发射点</p>
+                        <div>
+                            <span>￥599</span>
+                            <span><i></i>3<i></i>5</span>
+                        </div>
+                    </li>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <!-- 加载 -->
+        <div class="play_hot_jiaz">
+            <div class="w">加载更多</div>
+        </div>
+    </div>  
+</main>
 <!-- 底部 -->
 <footer>
     <div class="footer">
@@ -84,8 +118,8 @@
             <div class="foot_dl">
                     <dl>
                     <dt>免费试用</dt>
-                    <dd><a href="./help.html">试用流程</a></dd>
-                    <dd><a href="./help.html">如何提高成功率</a></dd>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
                     </dl>
                     <dl class="dl_2">
                     <dt>友情连接</dt>
