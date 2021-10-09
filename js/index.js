@@ -37,7 +37,7 @@ window.onload = function () {
                 lunb_.scrollLeft = 0;
             }
         //console.log(lunb_.scrollLeft);
-    },1000)
+    },2000)
     } lunb();
 
 
@@ -46,7 +46,7 @@ window.onload = function () {
         //1创建对象
         var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         //2.建立连接
-        ajax_.open('get', 'http://169.254.186.98:3000/useing/public', 'true');
+        ajax_.open('get', 'http://192.168.1.6:3000/useing/public', 'true');
         //3.传递数据
         ajax_.send();
         //4.接收数据
@@ -84,7 +84,7 @@ window.onload = function () {
         //1创建对象
         var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         //2.建立连接
-        ajax_.open('get', 'http://169.254.186.98:3000/report/new', 'true');
+        ajax_.open('get', 'http://192.168.1.6:3000/report/new', 'true');
         //3.传递数据
         ajax_.send();
         //4.接收数据
@@ -150,7 +150,7 @@ window.onload = function () {
           //1创建对象
           var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
           //2.建立连接
-          ajax_.open('get', 'http://169.254.186.98:3000/play/hot', 'true');
+          ajax_.open('get', 'http://192.168.1.6:3000/play/hot', 'true');
           //3.传递数据
           ajax_.send();
           //4.接收数据
